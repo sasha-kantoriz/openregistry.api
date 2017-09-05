@@ -32,7 +32,8 @@ entry_points = {
         'main = openregistry.api.app:main'
     ],
     'openregistry.api.plugins': [
-        'api = openregistry.api.includeme:includeme'
+        'api = openregistry.api.includeme:includeme',
+        'test_resource = openregistry.api.tests.dummyTestResource.includeme:includeme'
     ],
     'openregistry.tests': [
         'api = openregistry.api.tests.main:suite'
